@@ -1,0 +1,15 @@
+[build-system]
+requires = ["flit_core>=3.4,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "frappe_system_monitor"
+description = "System monitor for frappe and ERPNExt"
+authors = [{ name = "Anthony Emmanuel", email = "hackacehuawei@gmail.com" }]
+readme = "README.md"
+license = { file = "license.txt" }
+dynamic = ["version"]
+dependencies = []
+
+[tool.bench.frappe-dependencies]
+frappe = ">=15.0.0,<16.0.0"
